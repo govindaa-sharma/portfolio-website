@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: #F5A623;
+  color: #0A0E14;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0A0E14;
+  color: #E8EAED;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid #F5A623;
+  outline-offset: 3px;
+}
+
+/* subtle grain / signal texture used behind the hero only */
+.signal-grid {
+  background-image:
+    linear-gradient(to right, #161B25 1px, transparent 1px),
+    linear-gradient(to bottom, #161B25 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.mono-tick {
+  font-variant-numeric: tabular-nums;
+}

@@ -8,6 +8,8 @@ import GithubShowcase from "@/components/GithubShowcase";
 import OpenSourceEducation from "@/components/OpenSourceEducation";
 import Chatbot from "@/components/Chatbot";
 import Contact from "@/components/Contact";
+import Roles from "@/components/Roles";
+import Hobbies from "@/components/Hobbies";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
         <Skills />
         <Experience />
         <Projects />
+        <Roles />
+        <Hobbies />
         <GithubShowcase />
         <OpenSourceEducation />
         <Chatbot />

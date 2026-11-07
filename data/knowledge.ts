@@ -37,6 +37,9 @@ export type EducationItem = {
   timeframe: string;
 };
 
+export type Hobby = { title: string; note: string; image: string; label: string };
+export type TargetRole = { title: string; why: string; evidence: string[]; mark: string };
+
 export const profile = {
   name: "Govinda Sharma",
   title: "AI Engineer",
@@ -48,13 +51,31 @@ export const profile = {
   github: "https://github.com/govindaa-sharma",
   linkedin: "https://www.linkedin.com/in/govinda-sharma-931973281",
   summary:
-    "Govinda is a final-year Computer Science (Data Science) student and AI engineer who builds multi-agent systems that hold up under real conditions — adversarial input, cost limits, and human-in-the-loop safety requirements — not just demos. His projects consistently pair an LLM pipeline with an engineering discipline layer: structured-output contracts, guardrails against prompt injection, evaluation harnesses, and observability, documented honestly including what doesn't fully work yet.",
+    "Govinda Sharma is a final-year Computer Science (Data Science) student and AI engineer in Kolkata. He builds multi-agent and LLM systems with the engineering around the model in mind: structured outputs, prompt-injection defenses, evaluation, observability, and human approval where it matters. His project notes include the rough edges as well as the wins.",
   currentlyBuilding: [
     "Radarr — autonomous competitive intelligence system",
     "Epoché — ML experiment tracking platform with a LangGraph ReAct copilot agent",
     "Rowans — self-correcting, human-gated natural-language-to-SQL agent",
   ],
+  images: {
+    hero: "/images/profile/hero.webp",
+    about: "/images/profile/about.webp",
+    football: "/images/profile/football.webp",
+    personal: "/images/profile/personal-01.webp",
+  },
 };
+
+export const hobbies: Hobby[] = [
+  { title: "Football, from both sides of the touchline", note: "I watch it. I play it. The rest of the story is yours to add.", image: profile.images.football, label: "WATCH / PLAY" },
+  { title: "More things, eventually", note: "A spot for the interests that don’t fit neatly into a skills section.", image: profile.images.personal, label: "COMING INTO VIEW" },
+];
+
+export const targetRoles: TargetRole[] = [
+  { title: "Applied AI Engineer", why: "Build AI features that solve a real workflow problem—and hold up once people use them.", evidence: ["LangGraph agents", "FastAPI", "LLM evaluation"], mark: "01" },
+  { title: "Forward Deployed AI Engineer", why: "Work close to users, turn messy requirements into working systems, and iterate where the product meets reality.", evidence: ["End-to-end project builds", "Backend integrations", "Human approval flows"], mark: "02" },
+  { title: "Software Engineer", why: "I enjoy the engineering underneath the model: APIs, data, reliability, and making the whole thing usable.", evidence: ["Python / SQL", "10+ repo contributions", "FastAPI"], mark: "03" },
+  { title: "AI Engineer", why: "Bring models, retrieval, and backend systems together without treating the model as the whole product.", evidence: ["RAG", "Multi-agent systems", "PostgreSQL / Qdrant"], mark: "04" },
+];
 
 export const skills = {
   Languages: ["Python", "SQL", "R"],

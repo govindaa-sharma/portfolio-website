@@ -16,7 +16,7 @@ export default function Chatbot() {
     {
       role: "assistant",
       content:
-        "Ask me anything about Govinda — his projects, experience, or technical skills. I only answer from his verified portfolio data, so if something isn't documented, I'll say so instead of guessing.",
+        "Curious about Govinda’s projects, experience, or tools? Ask away. I use the facts on this site, and I’ll say when something isn’t documented rather than make it up.",
     },
   ]);
   const [input, setInput] = useState("");

@@ -8,14 +8,14 @@ export default function Contact() {
           <h2 className="text-sm font-mono text-faint pt-1">08 — Contact</h2>
           <div>
             <p className="text-2xl md:text-3xl text-ink font-medium leading-snug max-w-[20ch]">
-              Open to AI/ML internships and applied AI engineering roles.
+              Have a useful problem and a good team? I’d like to hear about it.
             </p>
             <div className="mt-8 flex flex-col gap-3">
               <a
                 href={`mailto:${profile.email}`}
                 className="focus-ring text-ink hover:text-trace transition-colors w-fit"
               >
-                {profile.email}
+                {profile.email} ↗
               </a>
               <a
                 href={profile.github}
